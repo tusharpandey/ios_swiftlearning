@@ -1,20 +1,17 @@
-//
-//  ViewController.swift
-//  SwiftLearning
-//
-//  Created by itsupport on 11/06/21.
-//  Copyright © 2021 itsupport. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func onButtonClicked(_ sender: Any) {
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "UserListingView", bundle: nil)
+        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "UserListingController")
+        UIApplication.shared.windows.first?.rootViewController = viewController
+        UIApplication.shared.windows.first?.makeKeyAndVisible()
+    }
+    
 }
 

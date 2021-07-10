@@ -8,6 +8,7 @@ target 'SwiftLearning' do
 
   # Pods for SwiftLearning
   pod 'Alamofire', '~> 5.4'
+  pod 'SwiftyJSON', '~> 4.0'
 
   target 'SwiftLearningTests' do
     inherit! :search_paths
@@ -17,5 +18,7 @@ target 'SwiftLearning' do
   target 'SwiftLearningUITests' do
     # Pods for testing
   end
+  
+  
 
 end
